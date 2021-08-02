@@ -1,0 +1,115 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    margin : 0;
+    padding: 0;
+}
+
+body {
+    background-color:black;
+    color:wheat;
+    min-height: 100vh;
+}
+
+header{
+    font-size: 2rem;
+}
+
+header,
+form {
+    min-height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input,
+form button {
+     outline: none; /* removes the outline of placeholder */
+    padding: 0.5rem;
+    font-size: 2rem;
+    border:2px;
+    background: rgb(246, 225, 225);
+    border-radius: 17px ;
+    margin: 7px;
+    
+}
+form input{
+    border:5px;
+    padding: 4px; 
+    margin: 4px;
+}
+
+form button {
+    color:red;
+    background: rgb(246, 225, 225);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover{
+    background :red;
+    color: white;
+}
+
+input::placeholder{
+    color: #f37c8e;
+    padding: 7px; 
+    margin: 7px;
+    border: 2px;
+}
+
+.todo-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+    min-width: 26%;
+    list-style: none;
+}
+
+.todo{
+    margin-block-end: 0.5rem;
+    background: #f6e1e1;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 18px;
+    transition: all 0.5s ease;
+}
+
+.todo li{
+    flex: 1;
+    padding: 9px;
+    margin: 1px;  
+    
+}
+
+.trash-btn, .complete-btn{
+    background: red;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 1.5px;
+    border-radius: 18px;
+}
+
+.fa-trash,
+.fa-check{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
